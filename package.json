@@ -45,6 +45,8 @@
     "lint": "run-p lint:*",
     "lint:es": "eslint --cache 'src/**/*.{ts,tsx,js}' '*.js'",
     "lint:p": "prettier --check \"src/**/*.ts{,x}\" \"*.{json,yml}\" \"*/**/*.{yml,json,less,scss}\"",
+    "fix": "run-s fix:*",
+    "fix:es": "yarn lint:es --fix",
     "fix:p": "yarn lint:p --write",
     "cy:open": "cypress open",
     "storybook": "start-storybook -p 6006 -s public"
