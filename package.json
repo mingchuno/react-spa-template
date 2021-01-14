@@ -39,7 +39,9 @@
     "lint": "eslint --cache 'src/**/*.{ts,tsx,js}' '*.js'",
     "p": "prettier --check \"src/**/*.ts{,x}\" \"*.{json,yml}\" \"*/**/*.{yml,json,less,scss}\"",
     "p:fix": "yarn p --write",
-    "cy:open": "cypress open"
+    "cy:open": "cypress open",
+    "storybook": "start-storybook -p 6006 -s public",
+    "build-storybook": "build-storybook -s public"
   },
   "eslintConfig": {
     "extends": [
@@ -72,5 +74,13 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@storybook/addon-actions": "^6.1.14",
+    "@storybook/addon-essentials": "^6.1.14",
+    "@storybook/addon-links": "^6.1.14",
+    "@storybook/node-logger": "^6.1.14",
+    "@storybook/preset-create-react-app": "^3.1.5",
+    "@storybook/react": "^6.1.14"
   }
 }
