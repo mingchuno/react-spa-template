@@ -3,6 +3,7 @@ env:
 
 extends:
   - react-app
+  - react-app/jest
   - prettier
   - prettier/standard
   - plugin:cypress/recommended
