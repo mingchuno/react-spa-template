@@ -1,0 +1,20 @@
+env:
+  cypress/globals: true
+
+extends:
+  - react-app
+  - prettier
+  - prettier/standard
+  - plugin:cypress/recommended
+
+plugins:
+  - prettier
+  - cypress
+
+rules:
+  prettier/prettier: error
+  '@typescript-eslint/no-unused-vars':
+    - warn
+    - args: none
+      varsIgnorePattern: '^_'
+      argsIgnorePattern: '^_'
